@@ -1,0 +1,15 @@
+<!-- Imprimendo la lista como HTML -->
+<ul>
+<% for (i=0; i<animales.length; i++) { %>
+     <li><%- include('_partial_animal', animales[i]); %></li>
+<% } %>
+</ul>
+
+
+<form action="/user-data" method="POST">
+  <label for="first-name-input">First Name:</label>
+  <input id="first-name-input" type="text" name="minombre">
+  <input id="first-name-input" type="password" name="passguord">
+
+  <input type="submit" value="Save Name">
+</form>
